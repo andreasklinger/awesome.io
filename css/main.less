@@ -1,33 +1,54 @@
 @import "./normalize.css";
-@import "./main.css";
+@import "./bg.css";
 
 html {
-    background-color: #000;
+    background-color: #EF0E88;
 }
 
 body {
   margin: 0;
   width: 100%;
+  min-width: 1100px;
   font-family: "helvetica neue",helvetica,arial,sans-serif;
   color: #fefefe;
 }
 
-header {
-  background-color: #EF0E88;
-  padding: 8em 5em 5em;
-}
 
-#projects {
-  background-color: #2F2E33;
-  padding: 8em 5em 2em;
+header {
+  min-width: 1100px;
+  background-color: #EF0E88;
+  padding: 5em 5em 4em;
 
   p {
+    .large;
+    .twisted;
+    width: 950px;
+    margin-top: 0;
+    margin-bottom: 5em;
+    position: relative;
+    left: 1.2em;
+    line-height: 1.5em;
+    & > span {
+      background-color: #191919;
+      padding: 0.3em;
+    }
+  }
+}
+
+#projects{
+  min-width: 1100px;
+  padding: 4em 0 6em 6em ;
+  background-color: #2F2E33;
+  p {
+    .large;
     max-width: 950px;
   }
 }
 
 footer {
-  padding: 2em 5em 2em;
+  min-width: 1100px;
+  background-color: #000;
+  padding: 2em 6em 2em;
 
   small {
     font-size: 0.1em;
@@ -38,29 +59,32 @@ footer {
 h1 {
   font-size: 4.5em;
 }
+
 h1.logo  {
-    width: 750px;
-    font-size: 100px;
-    margin: 0;
-    color: #fff;
-    text-shadow: 0px 0px 2px #686868,
-                 0px 1px 1px #ddd,
-                 0px 2px 1px #d6d6d6,
-                 0px 3px 1px #ccc,
-                 0px 4px 1px #c5c5c5,
-                 0px 5px 1px #c1c1c1,
-                 0px 6px 1px #bbb,
-                 0px 7px 1px #777,
-                 0px 8px 3px rgba(100, 100, 100, 0.4),
-                 0px 9px 5px rgba(100, 100, 100, 0.1),
-                 0px 10px 7px rgba(100, 100, 100, 0.15),
-                 0px 11px 9px rgba(100, 100, 100, 0.2),
-                 0px 12px 11px rgba(100, 100, 100, 0.25),
-                 0px 13px 15px rgba(100, 100, 100, 0.3),
-                 0px 14px 16px rgba(0, 0, 0, 1);
+  .twisted;
+  width: 750px;
+  font-size: 100px;
+  margin: 0;
+  margin-bottom: 0.2em;
+  color: #fff;
+  text-shadow: 0px 0px 2px #686868,
+               0px 1px 1px #ddd,
+               0px 2px 1px #d6d6d6,
+               0px 3px 1px #ccc,
+               0px 4px 1px #c5c5c5,
+               0px 5px 1px #c1c1c1,
+               0px 6px 1px #bbb,
+               0px 7px 1px #777,
+               0px 8px 3px rgba(100, 100, 100, 0.4),
+               0px 9px 5px rgba(100, 100, 100, 0.1),
+               0px 10px 7px rgba(100, 100, 100, 0.15),
+               0px 11px 9px rgba(100, 100, 100, 0.2),
+               0px 12px 11px rgba(100, 100, 100, 0.25),
+               0px 13px 15px rgba(100, 100, 100, 0.3),
+               0px 14px 16px rgba(0, 0, 0, 1);
 }
 
-h1.logo, .text {
+.twisted {
   -webkit-transform: rotate(-10deg);
   -moz-transform: rotate(-5deg);
   -ms-transform: rotate(-20deg);
@@ -69,22 +93,14 @@ h1.logo, .text {
 }
 
 
-p.large {
+.large {
   font-size: 3em;
   font-weight: 400;
-  line-height: 1.5em;
-
+  line-height: 1.3em;
   small.info {
     display: block;
     font-size: 0.5em;
   }
-}
-
-p.text {
-  margin-top: 0;
-  margin-bottom: 5em;
-  position: relative;
-  left: 1.2em;
 }
 
 a {
@@ -98,19 +114,12 @@ a:hover {
 
 
 
-h1 > span, p > span {
-  background-color: #191919;
-  padding: 0.3em;
-}
-
-
 .heartme {
-
   &:before {
-  content: "♥";
-  margin-right: 0.2em;
-  font-size: 120%;
-  color: #EF0E88;
-}
+    content: "♥";
+    margin-right: 0.2em;
+    font-size: 120%;
+    color: #EF0E88;
+  }
 }
 
